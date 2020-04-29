@@ -1,0 +1,60 @@
+How to get APIs?
+
+Reddit: Log in your reddit account if you have, sign up if not.
+        Go to https://www.reddit.com/prefs/apps.
+        Click 'create app' or 'create another app'.
+        Enter your app name.
+        Choose 'script' in the three available choices.
+        Enter http://localhost:8080 in redirect url.
+        Click 'create app'.       
+        Your personal use script (client id) is the 14 characters at the right side of the blue question mark.
+        Your client secret is the 27 characters at the right side of secret.
+        You will also need your app name, user name and password when scrape reddit data.
+
+Yelp: Log in your yelp account if you have, sign up if not.
+      Go to https://www.yelp.com/fusion.
+      Click 'Manage App'.
+      You can see your client ID and API key Under 'My App', if not, click 'create App'.
+      Fill in the form and clikc 'Create New App'.
+      Then you can see your client id and API key.
+
+
+How to get the two files states-name.csv and counties-name.csv
+
+Visit https://www.kaggle.com/stansilas/us-state-county-name-codes
+Click 'Download' and you will get a zipfile
+Unzip the file and there are two csv files, 'states.csv' and 'US Countiess.csv' (Yes, double s here)
+Change their names to states-name.csv and counties-name.csv
+
+
+Then start to use our program!
+There are five inputs in the program.
+Enter a State/Federal District/Territory(state in following) first:
+    Two windows will pop up in your browser,
+    one window is two plots of data of cases and deaths along time due to COVID-19 in the state that you input,
+    another is scores of top 10 discussions about COVID-19 in the state, you can look the title if you put your mouse on the bar.
+Then, enter the number of discussion you are interested in:
+    The website of the discussion will pop up,
+    if you don't want to see any discussions in detail, just enter 'skip'.
+Next, enter a County/Parish/Municipality(county in following) in the state you just chose:
+    Two windows will pop up in your browser,
+    one window is two plots of data of cases and deaths along time due to COVID-19 in the county that you input,
+    another is a pie plot showing percentage of best 100(max) restaurants (sort by Bayesian rating) open now in price categories in the county.
+        Note: best here is sorted by so called Bayesian rating. Bayesian rating here is from Yelp Fusion Documentation https://www.yelp.com/developers/documentation/v3/business_search,
+        "the rating sort is not strictly sorted by the rating value, but by an adjusted rating value that takes into account the number of ratings, 
+        similar to a Bayesian average." 
+Then, enter a price in dollar signs in the price categories of the pie plot:
+    A window will pop up in your browser,
+    it is a plot of restaurants open now (sort by Bayesian rating) in the input price category and their real ratings in the county,
+    you can look the tile if you put your mouse on the bar.
+Last, enter the number of restaurant you are interested in :
+    The Yelp page of the retaurant site will pop up,
+    and start to order takeout! 
+
+You can enter exit at any step when you want to quit the program, and you can enter back if you want to back to last step.
+
+
+
+      
+      
+
